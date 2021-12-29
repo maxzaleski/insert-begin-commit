@@ -28,6 +28,7 @@ def main(base_dir: str) -> None:
             with open(entity_path, "w") as f:
                 # Some may already contain the keywords, in which case we don't want to add them again.
                 if content.startswith("BEGIN;"):
+                    f.write(content)
                     continue
                 else:
                     # Rewrite the file with the keywords inserted.
