@@ -141,3 +141,5 @@ cython_debug/
 # Directories
 input/
 output/
+.idea/
+.vscode/
